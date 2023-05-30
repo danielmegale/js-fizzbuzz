@@ -11,16 +11,17 @@ for(let i = 1; i <= 100; i++){
         word='FizzBuzz';
         color='bg-fizzbuzz'
 
-    }else if (!(i % 3)){//i numeri multipli
+    }else if (!(i % 3)){//i numeri multipli di 3 
         word='Fizz';
         color='bg-fizz'
     }
-    else if(!(i % 5)){
+    else if(!(i % 5)){//i numeri multipli di 5 
         word='Buzz';
         color='bg-buzz'
     }
     console.log(word)
     mod += `<li class="${color}">${word}</li>`;
 }
+//stampo le variabili nel DOM
 mod = `<ul class="list"> ${mod} </ul>`;
 number.innerHTML= mod;
